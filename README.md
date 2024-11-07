@@ -29,21 +29,6 @@ The repository is structured to maintain clear separation between frontend, back
 No complex build system is required since this project uses  JavaScript, HTML, and CSS.
 To run the project, simply open the index.html file in any web browser—no compilation or build steps are necessary.
 
-## Configuration Files
-## 🛠️ Configuration Files
-- **`package.json`**: (Optional) If you plan to expand the project with Node.js, add dependencies, or manage build scripts using tools like Webpack or Parcel.
-   ```json
-   {
-     "name": "rule-engine-ast",
-     "version": "1.0.0",
-     "scripts": {
-       "start": "node server.js"
-     },
-     "dependencies": {
-       "express": "^4.17.1"
-     }
-   }
-
 Non-Functional Considerations
 ## Security
 Input Validation: Implemented input validation for all user-supplied data to prevent malicious injections and invalid rule strings from causing errors or breaches.
@@ -58,3 +43,13 @@ Rule Combination Heuristics: When combining multiple rules, the system uses oper
 Implemented comprehensive error handling for invalid rules, missing operators, or malformed attribute inputs, ensuring that users receive meaningful error messages and can correct their input easily.
 ##  Deployment Considerations
 Can be deployed to cloud platforms such as Heroku, AWS, or Netlify for frontend and backend hosting.
+
+## Future Enhancements
+Persistent Data Storage: Integrate with a database (e.g., MongoDB, SQL) to allow saving and loading rules across sessions.
+User-Defined Functions: Extend the rule engine to support custom functions within rules, enabling advanced conditions.
+Enhanced Security: Add encryption to secure rule data when transmitted over the network, especially for sensitive user data.
+Performance Optimization: Introduce AST caching and rule optimization to handle large datasets and frequent rule changes more efficiently.
+API Integration: Create RESTful APIs to allow remote rule evaluation, enabling integration with other applications.
+
+
+
